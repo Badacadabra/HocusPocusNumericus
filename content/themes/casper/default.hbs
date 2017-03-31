@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{! Page Meta }}
+    {{#is "home"}}
+    <title>Hocus Pocus Numericus | Blog de Baptiste Vannesson (Badacadabra)</title>
+    <meta name="description" content="Blog de réflexion sur le numérique avec une approche philosophique, anthropologique et sociologique. Chaque contenu invite le lecteur au cogito, en 300 mots." />
+    {{else}}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
+    {{/is}}
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
